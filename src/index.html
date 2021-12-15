@@ -9,31 +9,32 @@
     <header>
       <h1>Bienvenide a Seguimos, la plataforma donde podrás encontrar todos los eventos en un sólo lugar y a un sólo click.</h1>
     </header>
-    <main>Ingresa tu nombre <br>
-      <input type="text" id="nameperson" placeholder="Nombre Apellido"> <br>
+
+    <main>
+      <form class="page"> Ingresa tu nombre <br>
+      <input type="text" id="nameperson" placeholder="Nombre Apellido" required> <br> <br>
       Ingresa tu email <br>
-      <input type="text" placeholder="correo@mail.com"> <br>
+      <input type="text" placeholder="correo@mail.com" required> <br> <br>
       <button onclick='saludo()'>Registrar</button>
-      <h2 id='hello'></h2> <br>
-      <p>Ingresa los datos de tu tarjeta para verificar validez</p>
-      <form>
-
-        <p> Número de tarjeta </p>
-        <input type="text" placeholder="1234 5678 1234 5678" required>
-        <p>Fecha de expiración</p>
-        <input type="text" placeholder="mm/yy"><br>
-        <p>CVV</p>
-        <input type="password" id="myInput" placeholder="123">
-        <input type="checkbox" onclick="myFunction()">mostrar <br> <br>
-  
-        <button>validar</button>
-        <input type="reset" value="restablecer">
-        
-        </form>
-
       
+      </form>
 
+      <form class="page">
+      <h2 id='hello'></h2>
+      <p>Ingresa los datos de tu tarjeta para verificar validez</p>
 
+      <p> Número de tarjeta </p>
+      <input type="text" placeholder="1234 5678 1234 5678" accept-charset="1 2 3 4 5 6 7 8 9 0" required>
+      <p>Fecha de expiración</p>
+      <input type="text" placeholder="mm/yy"><br>
+      <p>CVV</p>
+      <input type="password" id="myInput" placeholder="123">
+      <input type="checkbox" onclick="myFunction()">mostrar <br> <br>
+
+      <button>validar</button>
+      <input type="reset" value="restablecer">
+      
+      </form>
     </main>
     <footer>Todos los derechos reservados</footer>
     <script src="index.js"></script>
