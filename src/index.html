@@ -2,18 +2,18 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>SeguimosCardValidation</title>
+    <title>SeguimosCardValidation</title> 
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header>
-      <h1>Bienvenide a Seguimos, la plataforma donde podrás encontrar todos los eventos en un sólo lugar y a un sólo click.</h1>
+      <h1 class="hola">Bienvenide a Seguimos, la plataforma donde podrás encontrar todos los eventos en un sólo lugar y a un sólo click.</h1>
     </header>
 
     <main>
-      <form class="page"> Ingresa tu nombre <br>
+      <form class="page"> <div>Ingresa tu nombre</div> <br>
       <input type="text" id="nameperson" placeholder="Nombre Apellido" required> <br> <br>
-      Ingresa tu email <br>
+      <div>Ingresa tu email</div> <br>
       <input type="text" placeholder="correo@mail.com" required> <br> <br>
       <button onclick='saludo()'>Registrar</button>
       
@@ -21,22 +21,25 @@
 
       <form class="page">
       <h2 id='hello'></h2>
-      <p>Ingresa los datos de tu tarjeta para verificar validez</p>
+      <p><div class= "ingresodatos">Ingresa los datos de tu tarjeta para verificar validez</div></p>
+      
 
       <p> Número de tarjeta </p>
-      <input type="text" placeholder="1234 5678 1234 5678" accept-charset="1 2 3 4 5 6 7 8 9 0" required>
+      <input type="number" id="creditCardNumber" placeholder="1234 5678 1234 5678" required>
       <p>Fecha de expiración</p>
       <input type="text" placeholder="mm/yy"><br>
       <p>CVV</p>
       <input type="password" id="myInput" placeholder="123">
       <input type="checkbox" onclick="myFunction()">mostrar <br> <br>
 
-      <button>validar</button>
+      <button onclick="valid()">validar</button>
       <input type="reset" value="restablecer">
       
       </form>
     </main>
-    <footer>Todos los derechos reservados</footer>
+  
+    <footer>Todos los derechos reservados.</footer>
+
     <script src="index.js"></script>
   </body>
 </html>
