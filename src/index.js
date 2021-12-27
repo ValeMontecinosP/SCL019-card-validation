@@ -19,8 +19,38 @@ function myFunction() {
   }
 }
 
-function valid() {
+function isValid() {
   let ccNumber = document.getElementById("creditCardNumber").value;
-  let ccNumberSplit = ccNumber.split(",");
-  console.log('ccNumberSplit');
+  console.log(typeof(ccNumber))
+  let ccNumberSplit = ccNumber.split("").map(Number);
+  console.log(ccNumberSplit)
+  //let ceciNumber = parseInt(ccNumberSplit)
+  //console.log(ceciNumber)
+ 
+  //document.getElementById("validacion").innerHTML=ccNumber
+  let numSum = 0;
+  let value;
+  for (var i = 0; i < 16; ++i) {
+        if (i % 2 == 0) {
+            value = 2*ccNumberSplit[i];
+            if (value >= 10) {
+              value = (Math.floor(value / 10) + (value % 10));
+                
+            }
+        } 
+        else {
+            value = +ccNumberSplit[i];
+        }
+        //console.log(value)
+        numSum += value;
+        
+        console.log(numSum)
+    }
+   
+    
+    
+
+    return (numSum % 10 == 0);
+    console.log(numSum)
+  document.getElementById("validacion").innerHTML=isValid
 }

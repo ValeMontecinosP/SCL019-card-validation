@@ -7,35 +7,40 @@
   </head>
   <body>
     <header>
-      <h1 class="hola">Bienvenide a Seguimos, la plataforma donde podrás encontrar todos los eventos en un sólo lugar y a un sólo click.</h1>
+      SEGUIMOS
     </header>
 
-    <main>
-      <form class="page"> <div>Ingresa tu nombre</div> <br>
+    <main class="page">
+      <h1 class="hola">Bienvenide a Seguimos, la plataforma donde podrás encontrar todos los eventos en un sólo lugar y a un sólo click.</h1>
+      <div>Ingresa tu nombre</div> <br>
       <input type="text" id="nameperson" placeholder="Nombre Apellido" required> <br> <br>
       <div>Ingresa tu email</div> <br>
       <input type="text" placeholder="correo@mail.com" required> <br> <br>
       <button onclick='saludo()'>Registrar</button>
       
-      </form>
+    </main>
 
-      <form class="page">
-      <h2 id='hello'></h2>
-      <p><div class= "ingresodatos">Ingresa los datos de tu tarjeta para verificar validez</div></p>
+    <main class="page">
+      <br><br><br>
+      <h1 id='hello'></h1>
       
-
+      <p><div>Ingresa los datos de tu tarjeta para verificar validez</div></p>
+      
       <p> Número de tarjeta </p>
       <input type="number" id="creditCardNumber" placeholder="1234 5678 1234 5678" required>
       <p>Fecha de expiración</p>
-      <input type="text" placeholder="mm/yy"><br>
+      <input type="text" placeholder="mm/yy">
       <p>CVV</p>
       <input type="password" id="myInput" placeholder="123">
       <input type="checkbox" onclick="myFunction()">mostrar <br> <br>
 
-      <button onclick="valid()">validar</button>
-      <input type="reset" value="restablecer">
+      <button onclick="isValid()">validar</button>
+      <p id="validacion"></p>
+      <input type="reset" value="restablecer"> (JS)
       
-      </form>
+    
+
+      <div class="validacion"></div>
     </main>
   
     <footer>Todos los derechos reservados.</footer>
