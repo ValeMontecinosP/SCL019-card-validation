@@ -16,7 +16,7 @@
       <input type="text" id="nameperson" placeholder="Nombre Apellido" required> <br> <br>
       <div>Ingresa tu email</div> <br>
       <input type="text" placeholder="correo@mail.com" required> <br> <br>
-      <button onclick='saludo()'>Registrar</button>
+      <button id='saludo'>Registrar</button>
       
     </main>
 
@@ -32,11 +32,11 @@
       <input type="text" placeholder="mm/yy">
       <p>CVV</p>
       <input type="password" id="myInput" placeholder="123">
-      <input type="checkbox" onclick="myFunction()">mostrar <br> <br>
+      <input type="checkbox" id="pass">mostrar <br> <br>
 
-      <button onclick="isValid()">validar</button>
+      <button id="valid">validar</button>
       <p id="validacion"></p>
-      <button onclick="document.getElementById('creditCardNumberInput').value = ''"> Reiniciar </button> (JS)
+      <button onclick="document.getElementById('creditCardNumberInput').value = ''"> Reiniciar </button>
       
     
 
@@ -45,6 +45,6 @@
   
     <footer>Todos los derechos reservados.</footer>
 
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
