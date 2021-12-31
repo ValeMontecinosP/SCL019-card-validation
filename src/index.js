@@ -1,3 +1,7 @@
+import validator from './validator.js';
+
+console.log(validator);
+
 document.getElementsByClassName("page")[0].style.display = "block";
 document.getElementsByClassName("page")[1].style.display = "none";
 
@@ -18,45 +22,20 @@ function myFunction() {
 }
 
 
-function isValid() {
-  let ccNumber = document.getElementById("creditCardNumber").value;
-  console.log(typeof(ccNumber))
-  let ccNumberSplit = ccNumber.split("").map(Number);
-  console.log(ccNumberSplit)
-  //let ceciNumber = parseInt(ccNumberSplit)
-  //console.log(ceciNumber)
+let ccNumber = document.getElementById("creditCardNumberInput").value;
+console.log(typeof(ccNumber))
+let creditCardNumber = ccNumber.split("").map(Number);
+console.log(creditCardNumber)
+//let ceciNumber = parseInt(ccNumberSplit)
+//console.log(ceciNumber)
  
-  //document.getElementById("validacion").innerHTML=ccNumber
-  let numSum = 0;
-  let value;
-  for (var i = 0; i < 16; ++i) {
-        if (i % 2 == 0) {
-            value = 2*ccNumberSplit[i];
-            if (value >= 10) {
-              value = (Math.floor(value / 10) + (value % 10));
-                
-            }
-        } 
-        else {
-            value = +ccNumberSplit[i];
-        }
-        
-        numSum += value;
-      
-        
-        console.log(numSum)
-
-        
-        
-        
+if (validator.isValid(creditCardNumber)) {
+    document.getElementById('validacion').innerHTML = 'Tu tarjeta es válida';
+    validator.maskify(creditCardNumber);
+    } else {
+    document.getElementById('validacion').innerHTML = 'Tu tarjeta es inválida';
+    validator.maskify(creditCardNumber);
     }
-  
-  if (numSum%10==0) {
-          document.getElementById('validacion').innerHTML = 'true';
-        } else {
-          document.getElementById('validacion').innerHTML = 'false';
-        }
-   
-  //console.log(numSum)
-  //document.getElementById("validacion").innerHTML=isValid
-}
+        
+//console.log(numSum)
+//document.getElementById("validacion").innerHTML=isValid

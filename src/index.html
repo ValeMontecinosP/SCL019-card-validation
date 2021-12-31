@@ -27,7 +27,7 @@
       <p><div>Ingresa los datos de tu tarjeta para verificar validez</div></p>
       
       <p> Número de tarjeta </p>
-      <input type="number" id="creditCardNumber" placeholder="1234 5678 1234 5678" required>
+      <input type="number" id="creditCardNumberInput" placeholder="1234 5678 1234 5678" required>
       <p>Fecha de expiración</p>
       <input type="text" placeholder="mm/yy">
       <p>CVV</p>
@@ -36,7 +36,7 @@
 
       <button onclick="isValid()">validar</button>
       <p id="validacion"></p>
-      <input type="reset" value="restablecer"> (JS)
+      <button onclick="document.getElementById('creditCardNumberInput').value = ''"> Reiniciar </button> (JS)
       
     
 
