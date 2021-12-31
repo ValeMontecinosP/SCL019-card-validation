@@ -1,5 +1,3 @@
-import validator from './validator.js';
-console.log(validator);
 document.getElementsByClassName("page")[0].style.display = "block";
 document.getElementsByClassName("page")[1].style.display = "none";
 
@@ -18,6 +16,7 @@ function myFunction() {
     x.type = "password";
   }
 }
+
 
 function isValid() {
   let ccNumber = document.getElementById("creditCardNumber").value;
@@ -41,16 +40,23 @@ function isValid() {
         else {
             value = +ccNumberSplit[i];
         }
-        //console.log(value)
+        
         numSum += value;
+      
         
         console.log(numSum)
-    }
-   
-    
-    
 
-    return (numSum % 10 == 0);
-    console.log(numSum)
-  document.getElementById("validacion").innerHTML=isValid
+        
+        
+        
+    }
+  
+  if (numSum%10==0) {
+          document.getElementById('validacion').innerHTML = 'true';
+        } else {
+          document.getElementById('validacion').innerHTML = 'false';
+        }
+   
+  //console.log(numSum)
+  //document.getElementById("validacion").innerHTML=isValid
 }
