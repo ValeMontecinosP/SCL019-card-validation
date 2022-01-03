@@ -14,6 +14,21 @@ function btnSaludo() {
     document.getElementsByClassName("page")[1].style.display = "block";
     
 }
+// * Input numero de tarjeta
+creditCardNumberInput.addEventListener('keyup', (e)  => {
+	let valorInput = e.target.value;
+
+    creditCardNumberInput.value = valorInput
+	// Eliminamos espacios en blanco
+	.replace(/\s/g, '')
+	// Eliminar las letras
+	.replace(/\D/g, '')
+	// Ponemos espacio cada cuatro numeros
+	.replace(/([0-9]{4})/g, '$1 ')
+	// Elimina el ultimo espaciado
+	.trim();
+})
+
 
 let y = document.getElementById("pass");
 y.addEventListener("click", btnPassword);
@@ -41,10 +56,12 @@ function btnValid() {
     
     if (validator.isValid(creditCardNumber)==true) {
         document.getElementById('validacion').innerHTML = 'Tu tarjeta es válida';
-        //validator.maskify(creditCardNumber);
+        document.getElementById('creditCardNumberInput').value = validator.maskify(creditCardNumber);
+        //document.getElementById("creditCardNumberInput").innerHTML=validator.maskify(creditCardNumber);
         } else {
         document.getElementById('validacion').innerHTML = 'Tu tarjeta es inválida';
-        //validator.maskify(creditCardNumber);
+        document.getElementById('creditCardNumberInput').value = validator.maskify(creditCardNumber);
+        //document.getElementById("creditCardNumberInput").innerHTML=validator.maskify(creditCardNumber);
         }
 }    
 //console.log(numSum)
