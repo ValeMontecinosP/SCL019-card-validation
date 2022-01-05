@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>SeguimosCardValidation</title> 
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      SEGUIMOS
+    </header>
+
+    <main class="page">
+      <h1 class="hola">Bienvenide a Seguimos, la plataforma donde podrás encontrar todos los eventos en un sólo lugar y a un sólo click.</h1>
+      <div>Ingresa tu nombre</div> <br>
+      <input type="text" id="nameperson" placeholder="Nombre Apellido"> <br> <br>
+      <div>Ingresa tu email</div> <br>
+      <input type="text" placeholder="correo@mail.com"> <br> <br>
+      <button id='saludo'>Registrar</button>
+      
+    </main>
+
+    <main class="page">
+      <br><br><br>
+      <h1 id='hello'></h1>
+      
+      <p><div>Ingresa los datos de tu tarjeta para verificar validez</div></p>
+      
+      <p> Número de tarjeta </p>
+      <input type="text" id="creditCardNumberInput" pattern="[0-9]+" placeholder="1234 5678 1234 5678">
+      <p>Fecha de expiración</p>
+      <input type="text" placeholder="mm/yy">
+      <p>CVV</p>
+      <input type="password" id="myInput" placeholder="123">
+      <input type="checkbox" id="pass">mostrar <br> <br>
+
+      <button id="valid">Validar</button>
+      <p id="validacion"></p>
+      <button onclick="document.getElementById('creditCardNumberInput').value = ''"> Reiniciar </button>
+      
+    
+
+      <div class="validacion"></div>
+    </main>
+  
+    <footer>Todos los derechos reservados.</footer>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>
