@@ -20,13 +20,13 @@ function btnSaludo() {
 }
 
 // Input número de tarjeta
-  document.getElementById("creditCardNumberInput").addEventListener('keyup', (e)  => {
-	let valorInput = e.target.value;
-
-    document.getElementById("creditCardNumberInput").value = valorInput
+document.getElementById("creditCardNumberInput").addEventListener('keyup', (e)  => {
+	let valorInput = e.target.value
+  document.getElementById("creditCardNumberInput").value = valorInput
 	// Se dejan de permitir espacios en blancos
-	.replace(/\s/g, '')
+  .replace(/\s/g, '')
 	// Permitimos que se escriban sólo carácteres numéricos
+  .replace(/\D/g, '')
 })
 
 /*función password para ocultar el CVV*/
@@ -62,7 +62,7 @@ function btnValid() {
         document.getElementById('creditCardNumberInput').value = validator.maskify(creditCardNumber);
         } 
         else {
-        document.getElementById('validacion').innerHTML = 'Tu tarjeta es inválida';
+        document.getElementById('validacion').innerHTML = 'Tu tarjeta es inválida, vuelve a intentarlo';
         document.getElementById('creditCardNumberInput').value = validator.maskify(creditCardNumber);
         }
 }    
