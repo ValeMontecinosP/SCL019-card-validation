@@ -1,6 +1,7 @@
 const validator = {
   isValid: (creditCardNumber) => {
-    /*se define numSum que es la suma de los números de la tarjeta de crédito, y se define value como el valor de cada posición del string */
+    /*se define numSum que es la suma de los números de la tarjeta de crédito, y se define value como el valor 
+    de cada posición del string */
     let numSum = 0;
     let value;
     /* acá se cambia el valor de los values pares y se suman los dígitos si la suma es mayor o igual a 10 */
@@ -15,8 +16,8 @@ const validator = {
               value = +creditCardNumber[i];
           }
           numSum += value;
-          //console.log(numSum)
     }
+    
     /* si el módulo de la suma dividido en 10 es 0 entonces la tarjeta es válida */      
     if (numSum%10==0) {
           return true;
