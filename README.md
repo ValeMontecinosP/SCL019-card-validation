@@ -1,4 +1,4 @@
-[Ir a SEGUIMOS](https://valemontecinosp.github.io/SCL019-card-validation/src/index.html)
+[Ir a SEGUIMOS](src/index.html)
 
 # SEGUIMOS: Todos los eventos a un sólo click.
 
@@ -13,7 +13,7 @@
 ***
 
 ## 1. Nuestro Proyecto.
-Creamos una plataforma que permitiera al usuario registrar sus datos y su tarjeta de crédito para comprar de manera sencilla y rápida tickets o entradas para eventos de entretención (como conciertos, teatro y otras actividades culturales)
+Creamos una plataforma que permitiera al usuario registrar sus datos y su tarjeta de crédito para comprar de manera sencilla y rápida tickets o entradas para eventos de entretención (como conciertos, teatro y otras actividades culturales).
 
 ![imagen proyecto](https://user-images.githubusercontent.com/95234097/148377861-c98f7ff9-f28b-4d94-ae15-403396566536.png)
 
@@ -34,9 +34,15 @@ Nuestros primeros prototipos fueron así:
 
 ![prototipo2](https://user-images.githubusercontent.com/95234097/148378273-cf1a1ae0-bce8-44a2-a742-465e5abde0de.jpeg)
 
-Nuestro prototipo final lo realizamos en Figma, quedando así: [Figma](https://www.figma.com/proto/VzM8rUzxWQuuxUTnA2EwHw/CardValidation?node-id=59%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=59%3A3)
+Nuestro prototipo final, luego de incorporar feedback en relación a lo estético (imagen de fondo, letras y colores de los elementos de la página), lo realizamos en Figma, quedando así: 
 
 
+![Captura de Pantalla 2022-01-06 a la(s) 08 57 51](https://user-images.githubusercontent.com/95260008/148379839-e6c05b1f-df41-4750-8d0f-893e55ff1137.png)
+
+![Captura de Pantalla 2022-01-06 a la(s) 08 58 15](https://user-images.githubusercontent.com/95260008/148379848-ae0ef52d-e83d-496c-a223-b26585fea01f.png)
+
+
+En este enlace de [Figma](https://www.figma.com/proto/VzM8rUzxWQuuxUTnA2EwHw/CardValidation?node-id=59%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=59%3A3) pueden acceder al prototipo funcional de nuestra página.
 
 ## 3. Nuestras Mejoras.
 
