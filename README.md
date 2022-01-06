@@ -1,4 +1,4 @@
-[Ir a SEGUIMOS](src/index.html)
+[Ir a SEGUIMOS](https://valemontecinosp.github.io/SCL019-card-validation/src/index.html)
 
 # SEGUIMOS: Todos los eventos a un sólo click.
 
@@ -34,7 +34,8 @@ Nuestros primeros prototipos fueron así:
 
 ![prototipo2](https://user-images.githubusercontent.com/95234097/148378273-cf1a1ae0-bce8-44a2-a742-465e5abde0de.jpeg)
 
-Nuestro prototipo final lo realizamos en Figma, quedando así: 
+Nuestro prototipo final lo realizamos en Figma, quedando así: [Figma](https://www.figma.com/proto/VzM8rUzxWQuuxUTnA2EwHw/CardValidation?node-id=59%3A3&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=59%3A3)
+
 
 
 ## 3. Nuestras Mejoras.
